@@ -1,0 +1,54 @@
+{
+  "name": "pump-fun-chat-mcp",
+  "version": "2.1.0",
+  "description": "MCP server for pump.fun chat integration - connect to and read messages from pump.fun token chat rooms",
+  "main": "dist/mcp-server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "mcp": "ts-node src/mcp-server.ts",
+    "mcp:build": "tsc && node dist/mcp-server.js"
+  },
+  "keywords": [
+    "mcp",
+    "pump.fun",
+    "chat",
+    "websocket",
+    "solana",
+    "claude",
+    "ai"
+  ],
+  "author": "codingbutter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codingbutter/pump-fun-chat-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/codingbutter/pump-fun-chat-mcp/issues"
+  },
+  "homepage": "https://github.com/codingbutter/pump-fun-chat-mcp#readme",
+  "type": "commonjs",
+  "bin": {
+    "pump-fun-chat-mcp": "./dist/mcp-server.js"
+  },
+  "files": [
+    "dist/mcp-server.js",
+    "dist/mcp-server.js.map",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/websocket": "^1.0.10",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "pump-chat-client": "^1.0.0",
+    "websocket": "^1.0.35"
+  }
+}

@@ -1,0 +1,39 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Development files
+.git/
+.gitignore
+tsconfig.json
+nodemon.json
+pump-fun-chat.mcp.json
+
+# Test files
+test/
+*.test.js
+*.spec.js
+
+# Build artifacts
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Example files
+src/websocket_communication_example.txt
+src/index.ts
+dist/index.js
+dist/index.js.map
+
+# Live stream folder
+live-stream/
