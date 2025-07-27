@@ -26,7 +26,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2.0.4] - 2025-07-27
 
-### Changed
+### Protocol Updates
 
 - Updated WebSocket headers to match browser request exactly
 - Added all required headers including Host, Connection, Upgrade, User-Agent, Accept-Encoding
@@ -34,14 +34,14 @@ All notable changes to this project will be documented in this file.
 
 ## [2.0.3] - 2025-07-27
 
-### Added
+### New Features
 
 - Implemented socket.io acknowledgment ID tracking system
 - Added support for numbered acknowledgment responses (430-439)
 - Added pending acknowledgment map to track request/response pairs
 - Added automatic cleanup of stale acknowledgments
 
-### Changed
+### Implementation Changes
 
 - Updated joinRoom, getMessageHistory, and sendMessage to use incrementing acknowledgment IDs
 - Refactored message handlers to properly route responses based on acknowledgment IDs
@@ -69,7 +69,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2.0.1] - 2025-07-27
 
-### Fixed
+### Bug Fixes
 
 - Fixed message history retrieval by adding support for socket.io message type "431"
 - Fixed message parsing to handle both "43" and "431" acknowledgment message types
@@ -83,7 +83,7 @@ All notable changes to this project will be documented in this file.
 
 ## [2.0.0] - Previous Release
 
-### Added
+### Initial Features
 
 - Initial MCP server implementation
 - WebSocket connection to pump.fun chat rooms
