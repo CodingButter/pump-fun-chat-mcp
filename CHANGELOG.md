@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.1] - 2025-07-27
+
+### Added
+- Comprehensive JSDoc documentation for all classes, methods, and interfaces
+- Detailed inline implementation comments explaining code logic
+- Enhanced documentation for MCP tools and their parameters
+- Improved example file with extensive documentation
+
+### Changed
+- Updated dependency pump-chat-client to v1.0.1 with enhanced documentation
+
 ## [2.1.0] - 2025-07-27
 
 ### Changed

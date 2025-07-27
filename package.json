@@ -1,6 +1,6 @@
 {
   "name": "pump-fun-chat-mcp",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "MCP server for pump.fun chat integration - connect to and read messages from pump.fun token chat rooms",
   "main": "dist/mcp-server.js",
   "scripts": {
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.6.0",
-    "pump-chat-client": "^1.0.0",
+    "pump-chat-client": "^1.0.1",
     "websocket": "^1.0.35"
   }
 }
