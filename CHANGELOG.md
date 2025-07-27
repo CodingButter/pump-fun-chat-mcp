@@ -11,7 +11,8 @@ All notable changes to this project will be documented in this file.
 - Enhanced documentation for MCP tools and their parameters
 - Improved example file with extensive documentation
 
-### Changed
+### Dependencies
+
 - Updated dependency pump-chat-client to v1.0.1 with enhanced documentation
 
 ## [2.1.0] - 2025-07-27
@@ -21,9 +22,6 @@ All notable changes to this project will be documented in this file.
 - Decoupled pump-chat-client into a separate npm package
 - Now uses pump-chat-client as a dependency instead of bundling it
 - Removed pump-chat-client source files from the distribution
-
-### Added
-
 - Dependency on pump-chat-client npm package (v1.0.0)
 
 ## [2.0.4] - 2025-07-27
@@ -48,9 +46,6 @@ All notable changes to this project will be documented in this file.
 - Updated joinRoom, getMessageHistory, and sendMessage to use incrementing acknowledgment IDs
 - Refactored message handlers to properly route responses based on acknowledgment IDs
 - Enhanced protocol compliance with socket.io specification
-
-### Fixed
-
 - Fixed acknowledgment matching for reliable request/response correlation
 - Improved handling of socket.io protocol messages
 
@@ -62,7 +57,7 @@ All notable changes to this project will be documented in this file.
 - Added handling for "438" error acknowledgment messages
 - Added serverError event emission for proper error handling
 
-### Changed
+### Updates
 
 - Updated sendMessage to include authentication requirement notice
 - Enhanced error logging to show when authentication is needed
@@ -81,7 +76,7 @@ All notable changes to this project will be documented in this file.
 - Added immediate message history request after joining room to ensure messages are loaded
 - Improved connection stability and message buffering
 
-### Changed
+### Improvements
 
 - Enhanced error handling for WebSocket message parsing
 - Updated message acknowledgment parsing to be more robust
